@@ -7,68 +7,73 @@
 	},
 	"item": [
 		{
-			"name": "Get all platforms",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{url}}/api/Platforms",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"Platforms"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get platform by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{url}}/api/Platforms/2",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"Platforms",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create platform",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Platform",
+			"item": [
+				{
+					"name": "Get all platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Platforms",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Platforms"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{url}}/api/Platforms",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"Platforms"
-					]
+				{
+					"name": "Get platform by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Platforms/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Platforms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Platforms",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Platforms"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	],
 	"event": [
