@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "6b6bbd37-163c-45b6-a9eb-cff1cb669604",
+		"name": "Local service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23534789"
+	},
+	"item": [
+		{
+			"name": "Get all platforms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/Platforms",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Platforms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get platform by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create platform",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
