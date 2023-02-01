@@ -15,8 +15,11 @@ public class PlatformRepo : IPlatformRepo
         _context = context;
     }
 
-    public void CreatePlatform(Platform plat)
+    public void CreatePlatform(Platform? plat)
     {
+        if (plat == null)
+            throw new ArgumentNullException(nameof(plat));
+
         _context.Platforms.Add(plat);
     }
 
