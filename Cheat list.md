@@ -40,3 +40,37 @@ docker stop platformservice-container
 docker rm platformservice-container
 
 ```
+
+## kubernetes
+
+### apply
+
+```ps1
+
+kubectl apply -f platforms-depl.yaml
+
+```
+
+### get
+
+```ps1
+
+kubectl get deployments
+
+kubectl get pods
+
+kubectl get services
+
+```
+
+### delete
+
+```ps1
+
+kubectl delete deployment platforms-depl
+
+kubectl get pods
+
+kubectl get services
+
+```
