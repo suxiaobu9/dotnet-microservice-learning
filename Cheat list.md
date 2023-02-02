@@ -51,6 +51,14 @@ kubectl apply -f platforms-depl.yaml
 
 ```
 
+### restart
+
+```ps1
+
+kubectl rollout restart deployment platforms-depl
+
+```
+
 ### get
 
 ```ps1
