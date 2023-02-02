@@ -74,6 +74,30 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Command",
+			"item": [
+				{
+					"name": "Test Inbound Connection",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
@@ -99,6 +123,11 @@
 	"variable": [
 		{
 			"key": "url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "command-url",
 			"value": "",
 			"type": "string"
 		}
