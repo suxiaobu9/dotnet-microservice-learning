@@ -69,6 +69,10 @@ kubectl get pods
 
 kubectl get services
 
+kubectl get storageclass
+
+kubectl get pvc
+
 # with namespace
 
 kubectl get deployments --namespace=ingress-nginx
@@ -91,6 +95,14 @@ kubectl get services
 
 ```
 
+### create secret
+
+```ps1
+
+kubectl create secret generic mssql --from-literal=SA_PASSWORD="passw0rd!"
+
+```
+
 ## Ingress nginx
 
 [Ingress nginx](https://kubernetes.github.io/ingress-nginx/deploy/)
@@ -102,4 +114,4 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 ## Other
 
 - map `acme.com` to 127.0.0.1
-  > 開啟路徑 `C:\Windows\System32\drivers\etc\hosts` 的檔案後，加入一行 `127.0.0.1 acme.com`
+  > 開啟路徑 `C:\Windows\System32\drivers\etc\hosts` 的檔案後，加入一行 `127.0.0.1 acme.com`，需要有管理員權限
