@@ -103,12 +103,26 @@ kubectl create secret generic mssql --from-literal=SA_PASSWORD="passw0rd!"
 
 ```
 
-## Ingress nginx
+### Ingress nginx
 
 [Ingress nginx](https://kubernetes.github.io/ingress-nginx/deploy/)
 
 ```ps1
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.5.1/deploy/static/provider/cloud/deploy.yaml
+```
+
+## dotnet
+
+### migration
+
+```ps1
+
+# install global ef tool
+dotnet tool install --global dotnet-ef
+
+# initial migration
+dotnet ef migrations add initialmigration
+
 ```
 
 ## Other

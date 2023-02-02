@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using PlatformService.Models;
 
 namespace PlatformService.Data;
@@ -20,6 +21,16 @@ public static class PrepDb
     {
         if (context == null)
             throw new ArgumentNullException(nameof(context));
+
+        Console.WriteLine("--> Attempting to apply migrations...");
+        try
+        {
+            context.Database.Migrate();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Could not run migrations: {ex.Message}");
+        }
 
         if (context.Platforms.Any())
         {
