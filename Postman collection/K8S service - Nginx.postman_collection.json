@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "82c5f484-660b-4e5f-93ef-7e5061e58646",
+		"name": "K8S service - Nginx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23534789"
+	},
+	"item": [
+		{
+			"name": "Platform",
+			"item": [
+				{
+					"name": "Get all platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Platforms",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get platform by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Platforms/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Platforms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Platforms",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

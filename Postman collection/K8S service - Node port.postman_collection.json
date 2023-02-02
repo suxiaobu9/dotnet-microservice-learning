@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "601d7c5a-11a9-4e3b-837f-ae3458090039",
-		"name": "K8S service",
+		"name": "K8S service - Node port",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "23534789"
 	},
