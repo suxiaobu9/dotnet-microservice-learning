@@ -96,6 +96,98 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get All Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Commands for Platform",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms/1/commands",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms",
+								"1",
+								"commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Commands for Platform",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms/1/commands/3",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms",
+								"1",
+								"commands",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Command for Platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"HowTo\": \"Build a .net project\",\r\n  \"CommandLine\": \"dotnet build\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms/1/commands",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms",
+								"1",
+								"commands"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
