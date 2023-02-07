@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using PlatformService.Dtos;
 using PlatformService.Models;
 
 namespace PlatformService.SyncDataServices.Http
