@@ -111,6 +111,10 @@ kubectl create secret generic mssql --from-literal=SA_PASSWORD="passw0rd!"
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.5.1/deploy/static/provider/cloud/deploy.yaml
 ```
 
+### mssql pvc path
+
+> \\wsl.localhost\docker-desktop-data\data\k8s-pvs\mssql-claim\pvc-87dc177c-249e-4158-bc53-a46f463e00e7
+
 ## dotnet
 
 ### migration
