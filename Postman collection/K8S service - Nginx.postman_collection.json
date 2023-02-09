@@ -53,7 +53,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Consul\",\r\n    \"publisher\": \"Hashicrop\",\r\n    \"cost\": \"Free\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -68,6 +68,122 @@
 							"path": [
 								"api",
 								"Platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Command",
+			"item": [
+				{
+					"name": "Get All Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Inbound Connection Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Command for Platform Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"HowTo\": \"Push a docker container to hub\",\r\n  \"CommandLine\": \"docker push <name of container>\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms/1010/commands",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms",
+								"1010",
+								"commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Commands for Platform Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms/1010/commands",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms",
+								"1010",
+								"commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Commands for Platform Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{command-url}}/api/c/Platforms/1010/commands/2",
+							"host": [
+								"{{command-url}}"
+							],
+							"path": [
+								"api",
+								"c",
+								"Platforms",
+								"1010",
+								"commands",
+								"2"
 							]
 						}
 					},
@@ -101,6 +217,10 @@
 			"key": "url",
 			"value": "",
 			"type": "string"
+		},
+		{
+			"key": "command-url",
+			"value": ""
 		}
 	]
 }

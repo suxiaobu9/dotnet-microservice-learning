@@ -122,7 +122,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{command-url}}/api/c/Platforms/1/commands",
+							"raw": "{{command-url}}/api/c/Platforms/1009/commands",
 							"host": [
 								"{{command-url}}"
 							],
@@ -130,7 +130,7 @@
 								"api",
 								"c",
 								"Platforms",
-								"1",
+								"1009",
 								"commands"
 							]
 						}
@@ -143,7 +143,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{command-url}}/api/c/Platforms/1/commands/3",
+							"raw": "{{command-url}}/api/c/Platforms/1009/commands/3",
 							"host": [
 								"{{command-url}}"
 							],
@@ -151,7 +151,7 @@
 								"api",
 								"c",
 								"Platforms",
-								"1",
+								"1009",
 								"commands",
 								"3"
 							]
@@ -166,7 +166,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"HowTo\": \"Build a .net project\",\r\n  \"CommandLine\": \"dotnet build\"\r\n}",
+							"raw": "{\r\n  \"HowTo\": \"Push a docker container to hub\",\r\n  \"CommandLine\": \"docker push <name of container>\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -174,7 +174,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{command-url}}/api/c/Platforms/1/commands",
+							"raw": "{{command-url}}/api/c/Platforms/1009/commands",
 							"host": [
 								"{{command-url}}"
 							],
@@ -182,7 +182,7 @@
 								"api",
 								"c",
 								"Platforms",
-								"1",
+								"1009",
 								"commands"
 							]
 						}
