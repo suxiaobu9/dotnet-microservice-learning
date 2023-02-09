@@ -20,8 +20,8 @@ public class MessageBusClient : IMessageBusClient
         _configuration = configuration;
         var factory = new ConnectionFactory
         {
-            HostName = _configuration["RabbitMQ:Host"],
-            Port = int.Parse(_configuration["RabbitMQ:Port"] ?? "0"),
+            HostName = _configuration["RabbitMQ:Host"]!,
+            Port = int.Parse(_configuration["RabbitMQ:Port"]!),
         };
 
         try
