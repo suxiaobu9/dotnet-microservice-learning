@@ -40,6 +40,7 @@ public static class PrepDb
             {
                 continue;
             }
+            commandRepo.CreatePlatform(plat);
             commandRepo.SaveChanges();
         }
 
